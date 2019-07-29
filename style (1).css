@@ -1,0 +1,374 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*My Code*/
+
+* {
+    font-family: 'Boogaloo', verdana;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color:#3399ff;
+}
+
+body nav h1 {
+    font-size: 60px;
+    margin: 20px;
+    color: #ff9933;
+    text-align: center;
+    text-shadow: 3px 3px 3px #111;
+    margin-bottom: 40px
+}
+
+/*Search feild*/
+
+main .search-feild {
+    height: 50px;
+    width: 95%;
+    text-align: center;
+    background-color: #fff; 
+    border: 5px solid #111;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+main .search-feild input {
+    height: 40px;
+    width: 90%;
+    color: #111;    
+    font-size: 25px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+main .search-feild i {
+    font-size: 20px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+/*Adding ToDo*/
+
+main .add-todo {
+    width: 70%;
+    margin: 30px auto;
+}
+
+main .add-todo input {
+   width: 98%;
+   height: 60px;
+   font-size: 25px;
+   border: none;
+   border-radius: 5px;
+   padding-left: 20px;
+}
+
+main .add-todo {
+    text-align: center;
+}
+
+main .add-todo button {
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa54a;
+    color: #111;
+    margin: 15px 0;
+}
+
+main .add-todo button i {
+    font-size: 23px;
+    margin-right: 10px;    
+}
+
+main .add-todo button:hover {
+    background-color: #ff9933;
+}
+
+@media only screen and (max-width: 560px) {
+    main .add-todo {
+        width: 100%;
+    }
+
+    main .add-todo input {
+        width: 92%;
+     }
+
+     main .add-todo button {
+        width: 97%;
+    }
+}
+
+/*ToDo List*/
+
+main .todo-list {
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+main .todo-list h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0;
+    color: #ff9933;
+    text-transform: uppercase;
+}
+
+main .todo-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+main .todo-list ul li {
+    border: 3px solid #99bbff;
+    border-radius: 10px;
+    width: 70%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    height: 50px;
+    margin: 10px auto;
+    padding-left: 10px;
+    text-align: left;
+}
+
+main .todo-list ul li:hover {
+    transform: scale(1.05);
+}
+
+main .todo-list ul li #label {
+    border: none;
+    height: 95%;
+    width: 90%;
+    font-size: 23px;
+}
+
+main .todo-list ul li #check {
+    float: left;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    -webkit-appearance: none;
+    border: none;
+    background-color: #ff9933;
+    border-radius: 3px;
+    position: relative;    
+}
+
+main .todo-list ul li #check:checked:after {
+    content: '\2714';
+    font-size: 20px;
+    color: #555;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    color: #fff; 
+}
+
+main .todo-list ul li input[type="checkbox"]:checked + #label {
+     text-decoration: line-through;
+     color: #555;
+}
+
+@media only screen and (max-width: 1200px) {
+    main .todo-list ul li #label {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main .todo-list ul li #label {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    main .todo-list {
+        width: 96%;
+    }
+
+    main .todo-list ul li #label {
+        width: 70%;
+    }
+}
+
+/*ToDo Delete Buttons*/
+
+main .todo-btn {
+    margin: 15px auto;
+    width: 70%;
+}
+
+main .todo-btn button {
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa54a;
+    color: #111;
+}
+
+main .todo-btn button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+main .todo-btn button:hover {
+    background-color: #ff9933;
+}
+
+main .todo-btn #btn2 i {
+    font-size: 23px;
+}
+
+main .todo-btn #btn3 i {
+    font-size: 23px;
+}
+
+main .todo-btn #btn2 {
+    width: 175px;
+}
+
+main .todo-btn #btn3 {
+    width: 200px;
+    float: right;
+}
+
+@media only screen and (max-width: 560px) {
+    main .todo-btn {
+        width: 100%;
+        height: 140px;
+        text-align: center;
+    }
+    
+    main .todo-btn #btn2 {
+        width: 96%;
+    }
+
+    main .todo-btn #btn3 {
+        float: none;
+        width: 96%;
+        margin: 10px auto;
+    }
+}
+
+main .todo-list .list .mycheck {
+    opacity: 1;
+}
+
+.visual {
+    opacity: 1 !important;
+    border-radius: 10px;
+}

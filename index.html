@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MyToDo App</title>
+</head>
+<body onload="getTaskFromLocalstorage()">
+    <nav>
+        <H1>MyToDo App</H1>
+    </nav>
+    <main>
+        <div class="search-feild">
+            <i class="fa fa-search"></i>
+            <input type="search" id="filter" placeholder="Search Your Task here..">
+        </div>
+        <div class="add-todo">
+                <input id="getTask" type="text" placeholder="Add your Task here.." autofocus><br>
+                <button id="btn1" onclick="addItem()"><i class="fa fa-plus"></i>Add Task</button>
+        </div>
+        <div class="todo-list">
+            <h1>Task List</h1>
+            <ul id="list"></ul>
+        </div>
+        <div class="todo-btn">
+            <button id="btn2" onclick="deleteItem()"><i class="fa fa-remove"></i>Delete Task</button>
+            <button id="btn3"><i class="fa fa-trash"></i>Delete all Tasks</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
